@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function add() {
+        var numOne, numTwo, sum;
+        numOne = parseInt(document.getElementById("search").value);
+        numTwo = parseInt(document.getElementById("search2").value);
+        sum = numOne + numTwo;
+
+        //   document.getElementById("btn").value = sum;
+        alert(+sum);
+      }
+      function sub() {
+        var numOne, numTwo, sub;
+
+        numOne = parseInt(document.getElementById("search").value);
+        numTwo = parseInt(document.getElementById("search2").value);
+        sub = numOne - numTwo;
+        alert(+sub);
+      }
+      function multiply() {
+        var numOne, numTwo, multiply;
+        numOne = parseInt(document.getElementById("search").value);
+        numTwo = parseInt(document.getElementById("search2").value);
+        multiply = numOne * numTwo;
+        alert(+multiply);
+      }
+      function Division() {
+        var numOne, numTwo, Division;
+        numOne = parseInt(document.getElementById("search").value);
+        numTwo = parseInt(document.getElementById("search2").value);
+        Division = numOne / numTwo;
+        alert(+Division);
+      }
+    </script>
+  </head>
+  <body>
+    <br />
+    <br />
+    Enter no.1 <input id="search" type="text" />
+    <br />
+    <br />
+    Enter no.2 <input id="search2" type="text" />
+    <br />
+    <br />
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">Subtract</button>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="Division()">Division</button>
+
+    <!-- <p>Sum = <input id="btn"></p> -->
+  </body>
+</html>
